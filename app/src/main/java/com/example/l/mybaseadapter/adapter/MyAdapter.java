@@ -1,6 +1,7 @@
 package com.example.l.mybaseadapter.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class MyAdapter extends CommonAdatper<Bean> {
     @Override
     protected void convertView1(ViewHolder holder, Bean bean) {
         holder.setText(R.id.id_title, bean.getTitle()).setText(R.id.id_phone, bean.getPhone());
+        Log.i("asd","asd");
     }
 
     @Override
